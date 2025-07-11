@@ -1,4 +1,4 @@
-# 💉 Blood Pressure Predictor Web App 🧠💻
+# 💉 Blood Pressure Stage Predictor Web App 🧠💻
 
 Hey there! 👋  
 This is a **Flask + Machine Learning** web app that predicts **blood pressure risk** levels based on some basic inputs.  
@@ -41,7 +41,6 @@ Here’s how the project’s organized (neatly, ofc):
 
 ---
 
-## ⚙️ How to Run This Bad Boy
 
 ### 💾 Clone It!
 ```bash
@@ -99,7 +98,8 @@ __pycache__/
 Hi, I'm **Srashti Shukla** —  
 a student dev who builds cool stuff between coffee breaks and crash courses ☕👩‍💻
 
-📫 [Email Me](srashtishukla1111@gmail.com)  
+📫 [Email Me](srashtishukla1111@gmail.com)
+🌐 [My website](link)
 🐍 Python is life
 
 ---
