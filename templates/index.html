@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predictive Pulse - Home</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img
+          src="{{ url_for('static', filename='/img/logo.jpeg') }}"
+          alt="Logo"
+        />
+        <span>PredictivePulse</span>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('details') }}">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li>
+          <a id="Checkbtn" href="{{ url_for('predict_page') }}"
+            >Check Your BP Stage</a
+          >
+        </li>
+      </nav>
+    </header>
+
+    <section class="landing">
+      <div class="landing-content">
+        <h1 class="hero-title">Welcome to Predictive Pulse 🩺</h1>
+        <h2><span id="typed-text"></span><span class="cursor">|</span></h2>
+        <p class="hero-subtitle">
+          Let us walk beside you on your health journey. From early detection to
+          meaningful recommendations, we make blood pressure tracking easy,
+          insightful, and centered on <em>you</em>.
+        </p>
+        <a class="cta-button" href="{{ url_for('predict_page') }}"
+          >Check Your Blood Pressure Stage</a
+        >
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <footer id="contact" class="contact-section">
+      <h2>Contact to Srashti Shukla</h2>
+      <p>Have questions or feedback? We’d love to hear from you!</p>
+      <ul>
+        <li>
+          Email:
+          <a href="mailto:support@predictivepulse.ai"
+            >support@predictivepulse.ai</a
+          >
+        </li>
+        <li>Phone: +91-98765-43210</li>
+        <li>
+          Follow us on:
+          <a href="#">Twitter</a> | <a href="#">LinkedIn</a> |
+          <a href="#">GitHub</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+  </body>
+</html>

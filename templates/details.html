@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Predictive Pulse</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img
+          src="{{ url_for('static', filename='/img/logo.jpeg') }}"
+          alt="Logo"
+        />
+        <span>PredictivePulse</span>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('details') }}">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li>
+          <a id="Checkbtn" href="{{ url_for('predict_page') }}"
+            >Check Your BP Stage</a
+          >
+        </li>
+      </nav>
+    </header>
+  <!-- 📘 About Section -->
+  <section class="info-box">
+    <h2>Understanding Blood Pressure Stages</h2>
+    <ul>
+      <li><strong>Normal:</strong> Systolic 90–120, Diastolic 60–80</li>
+      <li><strong>Elevated:</strong> Systolic 120–129, Diastolic less than 80</li>
+      <li><strong>Stage 1 Hypertension:</strong> Systolic 130–139, Diastolic 80–89</li>
+      <li><strong>Stage 2 Hypertension:</strong> Systolic ≥140, Diastolic ≥90</li>
+      <li><strong>Hypertensive Crisis:</strong> Systolic >180 and/or Diastolic >120 (Seek emergency care)</li>
+    </ul>
+    <p>Regular monitoring, healthy lifestyle, and medical consultation are essential for blood pressure management.</p>
+  </section>
+
+  
+    <!-- CONTACT SECTION -->
+    <footer id="contact" class="contact-section">
+      <h2>Contact to Srashti Shukla</h2>
+      <p>Have questions or feedback? We’d love to hear from you!</p>
+      <ul>
+        <li>
+          Email:
+          <a href="mailto:support@predictivepulse.ai"
+            >support@predictivepulse.ai</a
+          >
+        </li>
+        <li>Phone: +91-98765-43210</li>
+        <li>
+          Follow us on:
+          <a href="#">Twitter</a> | <a href="#">LinkedIn</a> |
+          <a href="#">GitHub</a>
+        </li>
+      </ul>
+    </footer>
+</body>
+</html>
