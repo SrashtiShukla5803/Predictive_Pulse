@@ -22,6 +22,20 @@ This project demonstrates the integration of a supervised machine learning model
 
 ---
 
+## 🌐UI look:
+
+---
+## Landing-Page(Home)
+<img src="/static/WebsiteLook/Landing-HomePage.png">
+
+
+
+
+
+
+
+
+
 ## 🗂️ Project Structure
 
 ```
