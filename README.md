@@ -4,7 +4,6 @@
 [![Flask](https://img.shields.io/badge/Flask-Web_Framework-000000.svg)](https://flask.palletsprojects.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
-[![Deploy](https://img.shields.io/badge/Deployed%20on-Render-3c7cfc.svg)](https://your-live-demo-link.com)
 
 A machine learning-powered web application developed using **Flask** that predicts **blood pressure risk stages** based on basic user input. It combines a trained ML model with a clean, responsive frontend to serve as a browser-based health advisory tool.
 
@@ -29,7 +28,7 @@ This project demonstrates the integration of a supervised machine learning model
 📁 project/
 ├── app.py               → Flask backend
 ├── model.pkl            → Trained ML model (excluded via .gitignore)
-├── encoders.pkl         → Encoders for categorical input
+├── encoders.pkl         → Encoders for categorical input(excluded via .gitignore)
 ├── requirements.txt     → Project dependencies
 ├── templates/
 │   ├── index.html       → Home page
@@ -71,16 +70,6 @@ python app.py
 
 Visit `http://127.0.0.1:5000` in your browser to start using the app.
 
----
-
-## 🌐 Live Demo
-
-A live version of the app is hosted at:  
-👉 [https://your-live-demo-link.com](https://your-live-demo-link.com)
-
-*(Replace the above link with the actual deployed app URL once hosted.)*
-
----
 
 ## 🛠️ Tech Stack
 
@@ -100,7 +89,6 @@ Files and directories excluded from version control:
 ```
 *.pkl
 flaskenv/
-dataset/
 __pycache__/
 .env
 ```
