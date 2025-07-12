@@ -28,13 +28,20 @@ This project demonstrates the integration of a supervised machine learning model
 ## Landing-Page(Home)
 <img src="/static/WebsiteLook/Landing-HomePage.png">
 
+## Information/Details Page
+<img src="/static/WebsiteLook/Details-InformationPage.png">
 
+## Prediction-Form Page
+<img src="/static/WebsiteLook/PredictionFormPage.png">
 
+*** After Filling the FORM ***
 
+<img src="/static/WebsiteLook/InformationFilled.png">
 
+### Result-Page
+<img src="/static/WebsiteLook/ResultPage.png">
 
-
-
+---
 
 ## 🗂️ Project Structure
 
