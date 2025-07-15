@@ -48,8 +48,8 @@ This project demonstrates the integration of a supervised machine learning model
 ```
 📁 project/
 ├── app.py               → Flask backend
-├── model.pkl            → Trained ML model (excluded via .gitignore)
-├── encoders.pkl         → Encoders for categorical input(excluded via .gitignore)
+├── model.pkl            → Trained ML model
+├── encoders.pkl         → Encoders for categorical input
 ├── requirements.txt     → Project dependencies
 ├── templates/
 │   ├── index.html       → Home page
@@ -65,32 +65,6 @@ This project demonstrates the integration of a supervised machine learning model
 
 ---
 
-## ⚙️ Getting Started
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/bp-predictor.git
-cd bp-predictor
-```
-
-### 2. Set Up Virtual Environment
-```bash
-python -m venv venv
-source venv/bin/activate    # Windows: venv\Scripts\activate
-```
-
-### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run the App
-```bash
-python app.py
-```
-
-Visit `http://127.0.0.1:5000` in your browser to start using the app.
-
 
 ## 🛠️ Tech Stack
 
@@ -100,7 +74,7 @@ Visit `http://127.0.0.1:5000` in your browser to start using the app.
 - **Frontend:** HTML, CSS, JavaScript
 - **Templating Engine:** Jinja2
 - **Model Serialization:** Pickle
-
+- **Deployment:** Render
 ---
 
 ## 📁 .gitignore Highlights
@@ -108,7 +82,6 @@ Visit `http://127.0.0.1:5000` in your browser to start using the app.
 Files and directories excluded from version control:
 
 ```
-*.pkl
 flaskenv/
 __pycache__/
 .env
@@ -122,7 +95,7 @@ __pycache__/
 B.Tech Computer Science undergraduate, passionate about full-stack web development and applied machine learning. Enthusiastic about building real-world tech solutions.
 
 📫 Email: [srashtishukla1111@gmail.com](mailto:srashtishukla1111@gmail.com)  
-
+🌐 Live APP : [PredictivePulse](https://predictivepulse.onrender.com/)
 ---
 
 ## ⭐ Support
