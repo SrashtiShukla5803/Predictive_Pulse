@@ -1,9 +1,6 @@
 # Ignore Flask environment folder
 flaskenv/
 
-# Ignore ML model files
-*.pkl
-
 
 # Bytecode or temp files
 __pycache__/
