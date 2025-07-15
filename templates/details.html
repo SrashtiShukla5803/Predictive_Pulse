@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - Predictive Pulse</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Predictive Pulse</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
 
-<body>
-
+  <body>
     <header class="navbar">
       <!-- Logo -->
       <div class="logo">
@@ -28,30 +30,44 @@
 
       <!-- Navigation Links -->
       <nav class="nav-links" id="navLinks">
-        <li><a href="{{ url_for('home') }}">Home</a></li>
-        <li><a href="{{ url_for('details') }}">About</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li>
-          <a id="Checkbtn" href="{{ url_for('predict_page') }}"
-            >Check Your BP Stage</a
-          >
-        </li>
+        <ul>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('details') }}">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li>
+            <a id="Checkbtn" href="{{ url_for('predict_page') }}"
+              >Check Your BP Stage</a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
-  <!-- 📘 About Section -->
-  <section class="info-box">
-    <h2>Understanding Blood Pressure Stages</h2>
-    <ul>
-      <li><strong>Normal:</strong> Systolic 90–120, Diastolic 60–80</li>
-      <li><strong>Elevated:</strong> Systolic 120–129, Diastolic less than 80</li>
-      <li><strong>Stage 1 Hypertension:</strong> Systolic 130–139, Diastolic 80–89</li>
-      <li><strong>Stage 2 Hypertension:</strong> Systolic ≥140, Diastolic ≥90</li>
-      <li><strong>Hypertensive Crisis:</strong> Systolic >180 and/or Diastolic >120 (Seek emergency care)</li>
-    </ul>
-    <p>Regular monitoring, healthy lifestyle, and medical consultation are essential for blood pressure management.</p>
-  </section>
+    <!-- 📘 About Section -->
+    <section class="info-box">
+      <h2>Understanding Blood Pressure Stages</h2>
+      <ul>
+        <li><strong>Normal:</strong> Systolic 90–120, Diastolic 60–80</li>
+        <li>
+          <strong>Elevated:</strong> Systolic 120–129, Diastolic less than 80
+        </li>
+        <li>
+          <strong>Stage 1 Hypertension:</strong> Systolic 130–139, Diastolic
+          80–89
+        </li>
+        <li>
+          <strong>Stage 2 Hypertension:</strong> Systolic ≥140, Diastolic ≥90
+        </li>
+        <li>
+          <strong>Hypertensive Crisis:</strong> Systolic >180 and/or Diastolic
+          >120 (Seek emergency care)
+        </li>
+      </ul>
+      <p>
+        Regular monitoring, healthy lifestyle, and medical consultation are
+        essential for blood pressure management.
+      </p>
+    </section>
 
-  
     <!-- CONTACT SECTION -->
     <footer id="contact" class="contact-section">
       <h2>Contact to Srashti Shukla</h2>
@@ -71,5 +87,6 @@
         </li>
       </ul>
     </footer>
-</body>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
 </html>

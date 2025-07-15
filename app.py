@@ -1,5 +1,5 @@
 import pickle
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, jsonify
 
 model = pickle.load(open('model.pkl', 'rb'))
 label_encoders = pickle.load(open('encoders.pkl', 'rb'))
