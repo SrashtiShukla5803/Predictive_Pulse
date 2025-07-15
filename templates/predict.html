@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Predictive Pulse</title>
     <link
       rel="stylesheet"
@@ -28,16 +29,20 @@
 
       <!-- Navigation Links -->
       <nav class="nav-links" id="navLinks">
-        <li><a href="{{ url_for('home') }}">Home</a></li>
-        <li><a href="{{ url_for('details') }}">About</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li>
-          <a id="Checkbtn" href="{{ url_for('predict_page') }}"
-            >Check Your BP Stage</a
-          >
-        </li>
+        <ul>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('details') }}">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li>
+            <a id="Checkbtn" href="{{ url_for('predict_page') }}">
+              Check Your BP Stage
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
+
+    <!-- Form Section -->
     <div class="form-card">
       <h1>PREDICT YOUR BLOOD PRESSURE STAGE</h1>
       <form action="{{ url_for('predict') }}" method="post" class="form-grid">
@@ -55,9 +60,7 @@
           <option value="65+">65+</option>
         </select>
         <select name="History" required>
-          <option value="">
-            Do you have a history of high blood pressure?
-          </option>
+          <option value="">Do you have a history of high blood pressure?</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -67,24 +70,18 @@
           <option value="No">No</option>
         </select>
         <select name="TakeMedication" required>
-          <option value="">
-            Are you currently taking any medication for blood pressure?
-          </option>
+          <option value="">Are you currently taking any medication for blood pressure?</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
         <select name="Severity" required>
-          <option value="">
-            How would you rate the severity of your blood pressure symptoms?
-          </option>
+          <option value="">How would you rate the severity of your blood pressure symptoms?</option>
           <option value="Mild">Mild</option>
           <option value="Moderate">Moderate</option>
           <option value="Sever">Sever</option>
         </select>
         <select name="BreathShortness" required>
-          <option value="">
-            Have you experienced shortness of breath recently?
-          </option>
+          <option value="">Have you experienced shortness of breath recently?</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -99,26 +96,20 @@
           <option value="No">No</option>
         </select>
         <select name="Whendiagnoused" required>
-          <option value="">
-            When were you diagnosed with high blood pressure?
-          </option>
+          <option value="">When were you diagnosed with high blood pressure?</option>
           <option value="1 - 5 Years">1 - 5 Years</option>
           <option value="<1 Year">&lt;1 Year</option>
           <option value=">5 Years">&gt;5 Years</option>
         </select>
         <select name="Systolic" required>
-          <option value="">
-            What is your most recent systolic (upper) blood pressure reading?
-          </option>
+          <option value="">What is your most recent systolic (upper) blood pressure reading?</option>
           <option value="100+">100+</option>
           <option value="111 - 120">111 - 120</option>
           <option value="121 - 130">121 - 130</option>
           <option value="130+">130+</option>
         </select>
         <select name="Diastolic" required>
-          <option value="">
-            What is your most recent diastolic (lower) blood pressure reading?
-          </option>
+          <option value="">What is your most recent diastolic (lower) blood pressure reading?</option>
           <option value="100+">100+</option>
           <option value="130+">130+</option>
           <option value="70 - 80">70 - 80</option>
@@ -126,9 +117,7 @@
           <option value="91 - 100">91 - 100</option>
         </select>
         <select name="ControlledDiet" required>
-          <option value="">
-            Are you currently following a controlled or low-sodium diet?
-          </option>
+          <option value="">Are you currently following a controlled or low-sodium diet?</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -137,17 +126,14 @@
       </form>
     </div>
 
-    
-    <!-- CONTACT SECTION -->
+    <!-- Contact Section -->
     <footer id="contact" class="contact-section">
       <p>Have questions or feedback? We’d love to hear from you!</p>
       <p>Contact to Srashti Shukla</p>
       <ul>
         <li>
           Email:
-          <a href="mailto:support@predictivepulse.ai"
-            >support@predictivepulse.ai</a
-          >
+          <a href="mailto:support@predictivepulse.ai">support@predictivepulse.ai</a>
         </li>
         <li>Phone: +91-98765-43210</li>
         <li>
@@ -157,6 +143,15 @@
         </li>
       </ul>
     </footer>
+
+    <!-- Toggle Script -->
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+      }
+    </script>
+
     <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
 </html>
